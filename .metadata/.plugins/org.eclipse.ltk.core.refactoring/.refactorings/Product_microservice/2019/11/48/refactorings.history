@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.paas.sms.product.model.Product.assignedBy&apos; in &apos;com.paas.sms.product.model.Product&apos;&#x0D;&#x0A;- Original project: &apos;Product_microservice&apos;&#x0D;&#x0A;- Original element: &apos;com.paas.sms.product.model.Product.assignedBy&apos;&#x0D;&#x0A;- Getter method name: &apos;getAssignedBy&apos;&#x0D;&#x0A;- Setter method name: &apos;setAssignedBy&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;assignedBy&apos;" flags="589830" getter="getAssignedBy" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;com.paas.sms.product.model{Product.java[Product^assignedBy" insertion="29" setter="setAssignedBy" stamp="1575016966871" version="1.0" visibility="1"/>
+</session>

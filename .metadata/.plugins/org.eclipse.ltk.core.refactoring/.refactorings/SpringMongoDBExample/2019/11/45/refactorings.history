@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SpringMongoConfig.java&apos; to &apos;coupon-service/src/main/java/com.coupon.config&apos;&#x0D;&#x0A;- Original project: &apos;SpringMongoDBExample&apos;&#x0D;&#x0A;- Destination element: &apos;coupon-service/src/main/java/com.coupon.config&apos;&#x0D;&#x0A;- Original element: &apos;com.mkyong.config.SpringMongoConfig.java&apos;" description="Copy compilation unit" destination="=coupon-service/src\/main\/java&lt;com.coupon.config" element1="/src\/main\/java&lt;com.mkyong.config{SpringMongoConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1573020237401" units="1" version="1.0"/>
+</session>

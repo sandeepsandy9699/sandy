@@ -1,0 +1,84 @@
+package com.Sbms.controller;
+
+import java.lang.reflect.Array;
+import java.text.DecimalFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Sbms.document.Sbms;
+import com.Sbms.repository.SbmsRepository;
+
+@RequestMapping("/sbms")
+@RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+public class SbmsController {
+
+	@Autowired
+	SbmsRepository sbmsRepository;
+
+	@SuppressWarnings("null")
+	@PostMapping("/save")
+	public void SaveData() throws InterruptedException {
+		final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter dtfTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+		final LocalDateTime now = LocalDateTime.now();
+		Sbms sbms = sbmsRepository.findByDate(dtf.format(now));
+		List<Long> data = new ArrayList<Long>();
+		List<String> label = new ArrayList<String>();
+		if (sbms == null) {
+			sbms=new Sbms();
+			sbms.setDate(dtf.format(now));
+			//String random = new DecimalFormat("00").format(new Random().nextInt(99));
+			int random=60-((int)Math.round((Math.random())*(60-40)));
+			data.add((long) random);
+			sbms.setData(data);
+			label.add(dtf.format(now)+" "+dtfTime.format(now));
+		/*	String label[] = { dtf.format(now) + " 01:02:59", dtf.format(now) + " 03:02:59",
+					dtf.format(now) + " 09:02:59", dtf.format(now) + " 12:02:59", dtf.format(now) + " 15:02:59",
+					dtf.format(now) + " 20:02:59" };*/
+			sbms.setLabel(label);
+			/*
+			 * do{ String otp = new DecimalFormat("0000").format(new
+			 * Random().nextInt(9999)); }while(dtf.format(now));
+			 */
+			//sbms.setData(data);
+			//sbms.setLabel(label);
+			System.out.println("data saved");
+			sbmsRepository.save(sbms);
+		}
+		Sbms sbms1 = sbmsRepository.findByDate(dtf.format(now));
+		do {
+			final LocalDateTime now1 = LocalDateTime.now();
+			// sbms.setDate(dtf.format(now));
+			//for (int i = 1;; i++) {
+			int random=60-((int)Math.round((Math.random())*(60-40)));
+				//String random = new DecimalFormat("00").format(new Random().nextInt(99));
+				data.add((long) random);
+				label.add(dtf.format(now1)+" "+dtfTime.format(now1));
+				sbms1.setData(data);
+				sbms1.setLabel(label);
+				sbmsRepository.save(sbms1);
+				Thread.sleep(5000);
+			//}
+		} while (sbms1 != null);
+
+	}
+
+	@GetMapping("/getData/{date}")
+	public Sbms getData(@PathVariable String date) {
+		System.out.println("Date: " + date);
+		return sbmsRepository.findByDate(date);
+	}
+
+}

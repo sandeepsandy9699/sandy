@@ -1,0 +1,9 @@
+package com.sbms.models;
+
+public class Sbms {
+	
+	private long id;
+	private String date;
+	private String time;
+
+}

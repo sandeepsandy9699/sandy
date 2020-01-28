@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.paas.sms.product.exceptions&apos; to &apos;com.paas.license.exceptions&apos;&#x0D;&#x0A;- Original project: &apos;license-service&apos;&#x0D;&#x0A;- Original element: &apos;license-service/src/main/java/com.paas.sms.product.exceptions&apos;&#x0D;&#x0A;- Renamed element: &apos;license-service/src/main/java/com.paas.license.exceptions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.paas.sms.product.exceptions&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.paas.sms.product.exceptions" name="com.paas.license.exceptions" qualified="false" references="true" stamp="1571305904451" textual="false" version="1.0"/>
+</session>

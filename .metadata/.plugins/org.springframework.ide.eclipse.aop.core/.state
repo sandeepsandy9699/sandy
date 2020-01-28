@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringMongoDBExample"/>
+<aop-project name="paas-eureka-service"/>
+<aop-project name="Product_microservice"/>
+<aop-project name="coupon-service"/>
+<aop-project name="paas-sms-multitenant"/>
+<aop-project name="paas-zuul-service"/>
+<aop-project name="cart-service"/>
+<aop-project name="admin-tenant-service"/>
+<aop-project name="Sbms"/>
+<aop-project name="license-service"/>
+<aop-project name="paas-sms-security"/>
+<aop-project name="Smart_Battery_Management_Sysytem"/>
+<aop-project name="spring-data-jpa"/>
+<aop-project name="spring-boot-file-upload"/>
+</aop-reference-model>

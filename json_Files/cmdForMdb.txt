@@ -1,0 +1,5 @@
+mongoimport --db Countries --collection Country --file ./countries.json --jsonArray
+mongoimport --db Countries --collection State --file ./states.json --jsonArray
+
+
+mongoimport --db Countries --collection City --file ./cities.json --jsonArray

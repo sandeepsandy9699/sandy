@@ -1,0 +1,56 @@
+package com.sbms.models;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "SBMS")
+public class Sbms {
+
+	@Id
+	private long id;
+	private String data[];
+	private String label[];
+	private String date;
+	private String time;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String[] getData() {
+		return data;
+	}
+
+	public void setData(String[] data) {
+		this.data = data;
+	}
+
+	public String[] getLabel() {
+		return label;
+	}
+
+	public void setLabel(String[] label) {
+		this.label = label;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+}

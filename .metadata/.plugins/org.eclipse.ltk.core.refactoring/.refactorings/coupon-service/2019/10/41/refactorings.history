@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.coupon.document.UserDTO.couponCode&apos; in &apos;com.coupon.document.UserDTO&apos;&#x0D;&#x0A;- Original project: &apos;coupon-service&apos;&#x0D;&#x0A;- Original element: &apos;com.coupon.document.UserDTO.couponCode&apos;&#x0D;&#x0A;- Getter method name: &apos;getCouponCode&apos;&#x0D;&#x0A;- Setter method name: &apos;setCouponCode&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;couponCode&apos;" flags="589830" getter="getCouponCode" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;com.coupon.document{UserDTO.java[UserDTO^couponCode" insertion="17" setter="setCouponCode" stamp="1570692027921" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,16 @@
+package com.sbms.models;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "SBMS")
+public class Sbms {
+
+	@id
+	private long id;
+	private String data[];
+	private String label[];
+	private String date;
+	private String time;
+
+	
+}

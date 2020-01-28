@@ -1,0 +1,46 @@
+package com.sbms.controllers;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.sbms.models.Sbms;
+import com.sbms.repositories.SbmsRepository;
+
+@RequestMapping("/sbms")
+public class SbmsController {
+
+	@Autowired
+	SbmsRepository sbmsRepository;
+
+	@PostMapping("/save")
+	public void SaveData() {
+		final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+		DateTimeFormatter dtfTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+		final LocalDateTime now = LocalDateTime.now();
+		Sbms sbms = new Sbms();
+		sbms.setDate(dtf.format(now));
+		long data[] = { 40, 55, 42, 49, 59, 50 };
+		String label[] = { "01:02:59", "03:02:59", "09:02:59", "12:02:59", "15:02:59", "20:02:59" };
+		/*
+		 * do{ String otp = new DecimalFormat("0000").format(new
+		 * Random().nextInt(9999)); }while(dtf.format(now));
+		 */
+		sbms.setData(data);
+		sbms.setLabel(label);
+
+		sbmsRepository.save(sbms);
+	}
+
+	@GetMapping("/getData/{date}")
+	public Sbms getData(@PathVariable String date) {
+		return sbmsRepository.findByDate(date);
+	}
+
+}

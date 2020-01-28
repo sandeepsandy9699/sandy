@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=admin-tenant-service/C:\/Users\/Administrator\/.m2\/repository\/org\/mongodb\/mongo-java-driver\/3.8.2\/mongo-java-driver-3.8.2.jar&lt;com.mongodb.connection(Stream.class[Stream" modifiers="1537" timestamp="1563774081531"/>
+<typeInfo handle="=admin-tenant-service/C:\/Program Files\/Java\/jre1.8.0_71\/lib\/rt.jar&lt;java.util.stream(Stream.class[Stream" modifiers="1537" timestamp="1557748765743"/>
+<typeInfo handle="=admin-tenant-service/C:\/Program Files\/Java\/jre1.8.0_71\/lib\/rt.jar&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1557748765743"/>
+<typeInfo handle="=Product_microservice/C:\/Program Files\/Java\/jre1.8.0_71\/lib\/rt.jar&lt;com.sun.org.apache.xpath.internal.operations(String.class[String" modifiers="33" timestamp="1557748765743"/>
+<typeInfo handle="=Product_microservice/C:\/Program Files\/Java\/jre1.8.0_71\/lib\/rt.jar&lt;java.lang(String.class[String" modifiers="49" timestamp="1557748765743"/>
+<typeInfo handle="=paas-sms-multitenant/C:\/Users\/Administrator\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/8.5.28\/tomcat-embed-core-8.5.28.jar&lt;javax.servlet.http(HttpServletRequest.class[HttpServletRequest" modifiers="1537" timestamp="1562568249539"/>
+<typeInfo handle="=paas-sms-multitenant/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/spring-web\/5.0.4.RELEASE\/spring-web-5.0.4.RELEASE.jar&lt;org.springframework.web.client(RestTemplate.class[RestTemplate" modifiers="33" timestamp="1562568033042"/>
+<typeInfo handle="=admin-tenant-service/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/data\/spring-data-mongodb\/2.1.9.RELEASE\/spring-data-mongodb-2.1.9.RELEASE.jar&lt;org.springframework.data.mongodb.core.query(Query.class[Query" modifiers="33" timestamp="1563164423944"/>
+<typeInfo handle="=paas-sms-multitenant/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/data\/spring-data-mongodb\/2.0.5.RELEASE\/spring-data-mongodb-2.0.5.RELEASE.jar&lt;org.springframework.data.mongodb.core.query(BasicQuery.class[BasicQuery" modifiers="33" timestamp="1562568017187"/>
+</typeInfoHistroy>

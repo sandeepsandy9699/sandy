@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AutoIncrement&apos; to &apos;Sbms&apos;" description="Rename resource &apos;AutoIncrement&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/AutoIncrement" name="Sbms" stamp="1576218215213" updateReferences="true"/>
+</session>

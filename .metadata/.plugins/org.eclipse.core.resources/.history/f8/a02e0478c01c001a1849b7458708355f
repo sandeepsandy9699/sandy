@@ -1,0 +1,7 @@
+package com.sbms.models;
+
+public class Sbms {
+	
+	private long id; 
+
+}

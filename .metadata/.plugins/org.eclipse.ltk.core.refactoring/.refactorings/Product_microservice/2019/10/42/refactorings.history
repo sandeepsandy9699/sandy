@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.paas.sms.product.exceptions&apos; to &apos;license-service/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Product_microservice&apos;&#x0D;&#x0A;- Destination element: &apos;license-service/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Product_microservice/src/main/java/com.paas.sms.product.exceptions&apos;" description="Copy package" destination="=license-service/src\/main\/java" element1="/src\/main\/java&lt;com.paas.sms.product.exceptions" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1571305865563" version="1.0"/>
+</session>
